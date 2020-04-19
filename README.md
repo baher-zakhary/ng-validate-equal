@@ -32,7 +32,7 @@ import { ValidateEqualModule } from 'ng-validate-equal';
 
 ### Step #3:
 
-- Make sure you surround your field and its confirmation/retype field in a  `<form> </form>`  tag
+- Make sure you surround your field and its confirmation/retype field in a `<form> </form>` tag
 - Give your primary field a name
 - Use the directive on the secondary field and pass the primary field's name to the directive
 - Look for "notEqual" error in the confirmation field errors array
