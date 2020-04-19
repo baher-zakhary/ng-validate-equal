@@ -10,13 +10,15 @@ An Angular directive to validate equality of two template-driven form fields
 
 install ng-validate-equal package
 
-``` npm i ng-validate-equal ```
+```sh
+ npm i ng-validate-equal
+ ```
 
 ### Step #2:
 
  import "ValidateEqualModule" in your module.ts and add it to the NgModule imports' array
 
-```
+```ts
 import { ValidateEqualModule } from 'ng-validate-equal';
 
 @NgModule({
@@ -35,7 +37,7 @@ import { ValidateEqualModule } from 'ng-validate-equal';
 - Use the directive on the secondary field and pass the primary field's name to the directive
 - Look for "notEqual" error in the confirmation field errors array
 
-```
+```html
 <!-- form -->
 <form>
 
