@@ -67,3 +67,20 @@ import { ValidateEqualModule } from 'ng-validate-equal';
 ### CHEERS :)
 
 Love our package? [Give our repo a star >](https://github.com/BaherWael/ng-validate-equal)
+
+### Keywords
+
+validate
+equal
+confirm
+password
+repeat
+retype
+email
+angular
+directive
+tempate-driven forms
+form
+validation
+equality
+fields
