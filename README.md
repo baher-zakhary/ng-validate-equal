@@ -1,4 +1,4 @@
-# Validate equal
+# Validate equal directive for Angular
 
 An Angular directive to validate equality of two template-driven form fields
 
@@ -84,3 +84,5 @@ form
 validation
 equality
 fields
+match
+matching
