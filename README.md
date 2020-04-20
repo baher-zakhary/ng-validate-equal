@@ -16,7 +16,7 @@ install ng-validate-equal package
 
 ### Step #2:
 
- import "ValidateEqualModule" in your module.ts and add it to the NgModule imports' array
+ import `ValidateEqualModule from 'ng-validate-equal'` in your module.ts and add it to the NgModule imports' array
 
 ```ts
 import { ValidateEqualModule } from 'ng-validate-equal';
@@ -32,10 +32,10 @@ import { ValidateEqualModule } from 'ng-validate-equal';
 
 ### Step #3:
 
-- Make sure you surround your field and its confirmation/retype field in a  `<form> </form>`  tag
+- Make sure you surround your field and its confirmation/retype field in a `<form> </form>` tag
 - Give your primary field a name
-- Use the directive on the secondary field and pass the primary field's name to the directive
-- Look for "notEqual" error in the confirmation field errors array
+- Use the directive `ngValidateEqual` on the secondary field and pass the primary field's name to the directive like this `ngValidateEqual="primaryFieldName"`
+- Look for `notEqual` error in the confirmation field's errors array like this `modelConfirmPassword.hasError('notEqual')`
 
 ```html
 <!-- form -->
