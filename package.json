@@ -1,22 +1,12 @@
 {
   "name": "ng-validate-equal",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "peerDependencies": {
-    "@angular/common": ">=9.0.0",
-    "@angular/core": ">=9.0.0"
+    "@angular/common": ">=10.0.0",
+    "@angular/core": ">=10.0.0"
   },
-  "main": "bundles/ng-validate-equal.umd.js",
-  "module": "fesm5/ng-validate-equal.js",
-  "es2015": "fesm2015/ng-validate-equal.js",
-  "esm5": "esm5/ng-validate-equal.js",
-  "esm2015": "esm2015/ng-validate-equal.js",
-  "fesm5": "fesm5/ng-validate-equal.js",
-  "fesm2015": "fesm2015/ng-validate-equal.js",
-  "typings": "ng-validate-equal.d.ts",
-  "metadata": "ng-validate-equal.metadata.json",
-  "sideEffects": false,
   "dependencies": {
-    "tslib": "^1.10.0"
+    "tslib": "^2.0.0"
   },
   "description": "An Angular directive to validate equality of two template-driven form fields",
   "directories": {
@@ -50,5 +40,13 @@
   "bugs": {
     "url": "https://github.com/baher-zakhary/ng-validate-equal/issues"
   },
-  "homepage": "https://github.com/baher-zakhary/ng-validate-equal#readme"
+  "homepage": "https://github.com/baher-zakhary/ng-validate-equal#readme",
+  "main": "bundles/ng-validate-equal.umd.js",
+  "module": "fesm2015/ng-validate-equal.js",
+  "es2015": "fesm2015/ng-validate-equal.js",
+  "esm2015": "esm2015/ng-validate-equal.js",
+  "fesm2015": "fesm2015/ng-validate-equal.js",
+  "typings": "ng-validate-equal.d.ts",
+  "metadata": "ng-validate-equal.metadata.json",
+  "sideEffects": false
 }
