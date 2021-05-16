@@ -16,20 +16,13 @@ An Angular directive to validate equality of two template-driven form fields
 
 ### Step #1:
 
-  
+install a compatible version of "ng-validate-equal" package
 
-install ng-validate-equal package
-  
+|Angular version  | "ng-validate-equal" version | Installation command
+|--------------------|----------------------------------|------------
+| v9.x.x | v1.x.x | npm i ng-validate-equal@1
+| v10.x.x | v2.x.x | npm i ng-validate-equal@2
 
-```sh
-
-npm i ng-validate-equal
-
-```
-
-  
-  
-  
 
 ### Step #2:
 
@@ -98,7 +91,7 @@ app.component.html
 
 app.component.ts
 ```ts 
-import { Component } from  '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
 	selector: 'app-root',
@@ -107,7 +100,7 @@ import { Component } from  '@angular/core';
 })
 export  class  AppComponent {
 
-	model  = {
+	model = {
 		password: null,
 		confirmPassword: null
 	};
