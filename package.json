@@ -1,12 +1,12 @@
 {
   "name": "ng-validate-equal",
-  "version": "5.0.0",
+  "version": "6.0.0",
   "peerDependencies": {
-    "@angular/common": ">=11.0.0",
-    "@angular/core": ">=11.0.0"
+    "@angular/common": ">=12.0.0",
+    "@angular/core": ">=12.0.0"
   },
   "dependencies": {
-    "tslib": "^2.0.0"
+    "tslib": "^2.1.0"
   },
   "description": "An Angular directive to validate equality of two template-driven form fields",
   "directories": {
@@ -47,6 +47,5 @@
   "esm2015": "esm2015/ng-validate-equal.js",
   "fesm2015": "fesm2015/ng-validate-equal.js",
   "typings": "ng-validate-equal.d.ts",
-  "metadata": "ng-validate-equal.metadata.json",
   "sideEffects": false
 }

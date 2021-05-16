@@ -13,7 +13,7 @@ export class ValidateEqualDirective implements Validator, OnDestroy {
     private valueChangesSub: Subscription;
 
     constructor(@Attribute('ngValidateEqual') public otherControl: string) {
-
+        this.valueChangesSub = new Subscription();
     }
 
     ngOnDestroy() {
@@ -22,10 +22,14 @@ export class ValidateEqualDirective implements Validator, OnDestroy {
         }
     }
 
-    validate(selfControl: AbstractControl): { [key: string]: any } {
+    validate(selfControl: AbstractControl): any {
 
         const selfControlValue = selfControl.value;
         const otherControl = selfControl.root.get(this.otherControl);
+
+        if (!otherControl) {
+            throw new Error('ng-validate-equal: "otherControl" is not defined, please pass the name of the main field to the directive put on the secondary field like this example: ngValidateEqual="passwordFieldName"');
+        }
 
         if (this.valueChangesSub) {
             this.valueChangesSub.unsubscribe();
@@ -41,7 +45,7 @@ export class ValidateEqualDirective implements Validator, OnDestroy {
                         }
                     );
                 } else {
-                    if (selfControl.hasError('notEqual')) {
+                    if (selfControl.errors && selfControl.hasError('notEqual')) {
                         delete selfControl.errors['notEqual'];
                         if (!Object.keys(selfControl.errors).length) { selfControl.setErrors(null); }
                     }
@@ -59,14 +63,14 @@ export class ValidateEqualDirective implements Validator, OnDestroy {
         return null;
     }
 
-    private isEqual(val1, val2) {
+    private isEqual(val1: any, val2: any) {
         val1 = this.unifyEmptyStrings(val1);
         val2 = this.unifyEmptyStrings(val2);
 
         return val1 === val2;
     }
 
-    private unifyEmptyStrings(val) {
+    private unifyEmptyStrings(val: any) {
         const isDefined = this.isDefined;
         if (val === null || !isDefined(val)) {
             val = '';
@@ -74,7 +78,7 @@ export class ValidateEqualDirective implements Validator, OnDestroy {
         return val;
     }
 
-    private isDefined(value) {
+    private isDefined(value: any) {
         const defaultUndefined = void (0);
         return value !== defaultUndefined;
     }
