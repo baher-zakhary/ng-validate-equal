@@ -20,7 +20,7 @@ install a compatible version of "ng-validate-equal" package
 
 |Angular version  | "ng-validate-equal" version | Installation command
 |--------------------|----------------------------------|------------
-| v9.x.x | v1.x.x | npm i ng-validate-equal@1
+| v9.x.x | v3.x.x | npm i ng-validate-equal@3
 | v10.x.x | v2.x.x | npm i ng-validate-equal@2
 
 

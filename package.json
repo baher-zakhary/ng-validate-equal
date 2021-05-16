@@ -1,9 +1,54 @@
 {
   "name": "ng-validate-equal",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "peerDependencies": {
-    "@angular/common": "^10.2.4",
-    "@angular/core": "^10.2.4",
-    "tslib": "^2.0.0"
-  }
+    "@angular/common": ">=9.0.0",
+    "@angular/core": ">=9.0.0"
+  },
+  "main": "bundles/ng-validate-equal.umd.js",
+  "module": "fesm5/ng-validate-equal.js",
+  "es2015": "fesm2015/ng-validate-equal.js",
+  "esm5": "esm5/ng-validate-equal.js",
+  "esm2015": "esm2015/ng-validate-equal.js",
+  "fesm5": "fesm5/ng-validate-equal.js",
+  "fesm2015": "fesm2015/ng-validate-equal.js",
+  "typings": "ng-validate-equal.d.ts",
+  "metadata": "ng-validate-equal.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.10.0"
+  },
+  "description": "An Angular directive to validate equality of two template-driven form fields",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baher-zakhary/ng-validate-equal.git"
+  },
+  "keywords": [
+    "validate",
+    "equal",
+    "confirm",
+    "password",
+    "repeat",
+    "retype",
+    "email",
+    "angular",
+    "directive",
+    "tempate-driven",
+    "forms",
+    "form",
+    "validation",
+    "equality",
+    "fields",
+    "match",
+    "matching"
+  ],
+  "author": "Baher Zahkary",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/baher-zakhary/ng-validate-equal/issues"
+  },
+  "homepage": "https://github.com/baher-zakhary/ng-validate-equal#readme"
 }
