@@ -20,9 +20,10 @@ install a compatible version of "ng-validate-equal" package
 
 |Angular version  | "ng-validate-equal" version | Installation command
 |--------------------|----------------------------------|------------
-| v9.x.x | v3.x.x | npm i ng-validate-equal@3
-| v10.x.x | v4.x.x | npm i ng-validate-equal@4
 | v12.x.x | v6.x.x | npm i ng-validate-equal
+| v11.x.x | v5.x.x | npm i ng-validate-equal@5
+| v10.x.x | v4.x.x | npm i ng-validate-equal@4
+| v9.x.x | v3.x.x | npm i ng-validate-equal@3
 
 
 ### Step #2:
